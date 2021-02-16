@@ -1,0 +1,77 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.header {
+	background: #272727;
+}
+
+.header__row {
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	width: 96px;
+}
+
+.header__logo img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.header__nav {
+	font-size: 16px;
+	line-height: 100%;
+	color: #fff;
+	margin-left: 115px;
+}
+
+.header__nav a {
+	color: #fff;
+	text-decoration: none;
+	height: 98px;
+	line-height: 98px;
+	display: block;
+	position: relative;
+	padding: 0 16px;
+}
+
+.header__nav a:after {
+	content: '';
+	position: absolute;
+	height: 9px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #FFC700;
+	opacity: 0;
+	transition: all 0.2s ease-out;
+}
+
+.header__nav li.active a:after,
+.header__nav a:hover:after {
+	opacity: 1;
+}
+
+.header__nav ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.header__nav li {
+	list-style-type: none;
+}
+
+.header__nav li + li {
+	margin-left: 118px;
+}
+
+.header__contacts {
+	margin-left: auto;
+	font-size: 14px;
+	line-height: 130%;
+	color: #fff;
+	opacity: 0.5;
+}

@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 753px;
+    max-width: 100%;
+    width: 80%;
+    margin: 0% 10%;
+}
+.header{
+    height: 15%;
+    border: 2px solid #000000;
+    width: 100%;
+    background-color: #0066FF;
+}
+.header p{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 3% 5%;
+}
+.main{
+    height: 72%;
+    width: 100%;
+}
+.main div{
+    border: 2px solid #000000;
+    background-color: #FFCC00;
+    border-collapse: collapse;
+}
+.main .first{
+    float: left;
+    height: 100%;
+    width: 17%;
+}
+.main .first p{
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 120% 40% 120% 60%;
+}
+.main .second{
+    height: 15%;
+    font-size: 30px;
+    font-weight: 600;
+}
+.main .second p{
+    display: inline-block;
+    margin: 3% 0% 0% 7%;
+}
+.main .third{
+    height: 100%;
+    background-color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+}
+.main .third p{
+    display: inline-block;
+    margin: 10% 0% 0% 15%;
+}
+.footer{
+    clear: both;
+    height: 13%;
+    width: 100%;
+    background-color: #0066FF;
+    border: 2px solid #000000;
+}
+.footer p{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 2.5% 5%;
+}

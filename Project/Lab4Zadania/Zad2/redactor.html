@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+<title>Text Editor</title>
+
+</head>
+<body onLoad="Init();">
+   <div class="buttons">
+      <button class="btn-te" onClick="doStyle('bold');">B</button>
+      <button class="btn-te" onClick="doStyle('italic');">I</button>
+      <button class="btn-te" onClick="doStyle('underline');">U</button>
+      <button class="btn-te" onClick="color()"><input class="inp-te" type="color" id="myColor"></button>
+      <button class="btn-te" onClick="makeUp()">Up</button>
+      <button class="btn-te" onClick="makeLow()">Low</button>
+   </div>
+
+   <div class="myIframe">
+   <iframe id="iframe_redactor" VALUE=""></iframe>
+   </div>
+<script src="redactor.js" type="text/javascript"> </script>
+</body>
+</html>

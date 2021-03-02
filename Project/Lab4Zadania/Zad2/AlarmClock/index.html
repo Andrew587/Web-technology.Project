@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Будильник</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="switch.css" type="text/css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="header-text">Мои будильники</div>
+    </div>
+    <div class="site-body">
+        <div class="left-sidebar">
+            <div class="addCl" >
+                <img id="add1" src="AddButton.png">
+            </div>
+        </div>
+        <div class="main" id="myDiv">
+            Вывести включенные будильник›и
+            <div class="area">
+            </div><p></p>
+            <div class="clocks" >
+                <img src="ClockView2.png">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <p></p>
+            <input type='button' class='btn' id="seeOn" value='Показать только выбраныые будильники'>
+            <script src="Clock.js"></script>
+            <script src="App.js"></script>
+            <script src="run.js"></script>
+        </div>
+        <div class="right-sidebar">
+        </div>
+    </div>
+</div>
+</body>
+</html>

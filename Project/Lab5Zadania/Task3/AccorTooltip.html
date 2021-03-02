@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+        $( "#accordion" ).accordion({
+        collapsible: true
+        });
+    } );
+    </script>
+
+    <link rel="stylesheet" href="styleT3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+	      $('#accordeon .titleAcc').on('click', my_func);
+      });
+      function my_func(){
+        $('#accordeon .divAcc').not($(this).next());
+        $(this).next().toggleClass("active");
+      }
+    </script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( ".show-option" ).tooltip({
+      show: {
+        effect: "slideDown",
+        delay: 250
+      }
+    });
+  } );
+  </script>
+  
+  <title>Task3</title>
+</head>
+
+<body>
+    <h1>My <a class="show-option" href="http://jqueryui.com/demos/tooltip/#option-show" title="Shine)">sun</a> and <a class="show-option" href="http://jqueryui.com/demos/tooltip/#option-show" title="Big">stars</a></h1>
+    <div id="accordeon">
+
+        <h3 class="titleAcc">Jesse McCree</h3>
+        <div class="divAcc">
+          <p class="pAcc">Armed with his Peacekeeper revolver, the outlaw Jesse McCree doles out justice on his own terms. A $60 million bounty is on his head. At times, he has missed his old farm boy life. He enjoys liquor with "bite" to it, along with cookies.</p>
+        </div>
+
+        <h3 class="titleAcc">My fav Jesse's skins</h3>
+        <div class="divAcc">
+          <p class="pAcc">I can't believe someone created this, God bless him</p>
+          <img class="imgAcc" src="../Task3/picL5/mccree-halloween-skin.png" width="400px" alt="">
+          <img class="imgAcc" src="../Task3/picL5/mcus.jpg" width="400px" alt="">
+        </div>
+
+
+        <h3 class="titleAcc">Hanzo Shimada</h3>
+        <div class="divAcc">
+          <p class="pAcc">Mastering his skills as a bowman and an assassin, Hanzo Shimada strives to prove himself as a warrior without peer. He is likewise skilled with the sword, but has sworn off using such a weapon. He considers crossbows to be "toys for children," and believes that compassion has no place in battle. He has demonstrated a cynical view on the nature of the world.</p>
+        </div>
+
+        <h3 class="titleAcc">My fav Hanzo's skin</h3>
+        <div class="divAcc">
+          <p class="pAcc">Just look at this japanese man. Stopped breathing? Me too, partners, me too...</p>
+          <img class="imgAcc" src="../Task3/picL5/hanhal.jpg" width="400px" alt="">
+          <img class="imgAcc" src="../Task3/picL5/hansci.jpg" width="400px" alt="">
+        </div>
+        
+    </div>
+    </body>
+</html>

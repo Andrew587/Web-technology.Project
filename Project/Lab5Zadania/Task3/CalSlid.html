@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Slider functionality</title>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+      <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://snipp.ru/cdn/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <style type="text/css">
+          body{
+            background: #8FBC8F;
+          }
+          label{
+            font-family: Arial;
+            size: 200;
+          }
+      </style>
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#slider-3" ).slider({ 
+               min: 0,
+               max: 30,
+               value: 2,
+               slide: function( event, ui ) {
+                  $( "#client" ).val(ui.value);
+               } 
+            });
+         });
+
+        $(function() {
+            var x = new Date(2020,10,20);
+            $.datepicker.regional['ru'] = {
+                prevText: '&#x3c;Пред',
+                nextText: 'След&#x3e;',
+                currentText: 'Сегодня',
+                monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь', 'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+                monthNamesShort: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+                dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+                dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+                dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+                dateFormat: 'dd.mm.yy',
+                firstDay: 1,
+                isRTL: false,
+                showOtherMonths:true,
+                selectOtherMonths:true,
+                changeMonth:true,
+                changeYear: false,
+                showAnim:"scale"
+            };
+            var arr_data = [];
+            $.datepicker.setDefaults($.datepicker.regional['ru'])
+            $( '#datepicker' ).datepicker({
+                beforeShowDay: function(date) {
+                    for (var i=0; i<arr_data.length; i++)  { var d = arr_data[i];
+                        if (date.getTime() == (new Date(d[0],d[1],d[2])).getTime()) return[true]; }
+                    return[true, ""];}
+            })
+        });
+    </script>
+   </head>
+   
+   <body>
+      <!-- HTML --> 
+      <p>
+         <label for = "client">Кількість клієнтів:</label>
+         <input type = "text" id = "client" 
+            style = "border:0; color:#800000; font-weight:bold; ">
+      </p>
+      <div id = "slider-3"></div>
+      <p></p>
+      <p></p>
+      <div id="datepicker"></div>
+   </body>
+</html>

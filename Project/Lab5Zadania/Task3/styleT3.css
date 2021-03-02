@@ -1,0 +1,57 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    /* font-size: 16px; */
+    color: cornsilk;
+    background: rgb(26, 23, 49);
+}
+
+.titleAcc {
+    background: rgb(40, 36, 73);
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+
+.divAcc, .pAcc {
+    background: rgb(52, 48, 90);
+    border-radius: 15px;
+}
+
+.divAcc {
+    /* border: 1px solid darkred; */
+    visibility: hidden;
+
+    height:0;
+    overflow:hidden;
+    opacity:0;
+    transition:all 0.2s linear;
+    padding:0;
+    margin:auto;
+    
+} 
+
+.pAcc {
+    padding: 10px;
+
+}
+
+.imgAcc {
+    margin: 10px;
+    border-radius: 15px;
+
+}
+
+.active{
+    padding:10px;
+    visibility: visible;
+    height:auto;
+    overflow:none;
+    opacity:1;
+  }
+
+.show-option {
+    text-decoration: none;
+    color: darkred;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>freezeframe.js</title>
+
+    <script src="freezeframe.min.js"></script>
+
+    <style type="text/css">
+        body {
+            max-width: 1000px;
+            margin: 0px auto;
+            padding: 20px;
+            font-size: 13px;
+            text-align: center;
+            color: #202020;
+        }
+
+        a {
+            color: #202020;
+        }
+
+        p {
+            padding: 10px 0px;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        button {
+            width: 100px;
+            margin: 0px 10px 10px 0px;
+            padding: 5px 0px;
+            border: 1px solid #000;
+            background: #fff;
+            outline: none;
+            font-family: monospace;
+            text-align: center;
+        }
+
+        button:active {
+            background: #000;
+            color: #fff;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="bold title">Gif</p>
+
+
+
+    <!-- gif -->
+
+    <p>start & stop on click</p>
+
+    <img class="my-class-2"
+        src="https://i.gifer.com/WQDc.gif" />
+
+    <script>
+        new Freezeframe({
+            selector: '.my-class-2',
+            trigger: 'click'
+        });
+    </script>
+
+</body>
+
+</html>
